@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap');
+
+:root {
+  --font-body: 'Manrope', 'Avenir Next', 'Nunito Sans', 'Segoe UI', sans-serif;
+  --font-display: 'Sora', 'Manrope', 'Avenir Next', 'Segoe UI', sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+
+  --line-height-tight: 1.2;
+  --line-height-base: 1.55;
+  --line-height-relaxed: 1.68;
+
+  --color-bg-canvas: #f3eefc;
+  --color-bg-panel: rgba(255, 255, 255, 0.94);
+  --color-bg-panel-soft: rgba(255, 255, 255, 0.76);
+  --color-bg-elevated: #ffffff;
+
+  --color-text-strong: #1f2430;
+  --color-text-body: #2f3841;
+  --color-text-muted: #5f6977;
+  --color-text-subtle: #7d8794;
+
+  --color-border-soft: #d9dee7;
+  --color-border-strong: #c8d0dd;
+
+  --color-brand-500: #2f6feb;
+  --color-brand-600: #1f56b0;
+  --color-brand-100: #edf4ff;
+
+  --color-success-bg: #e9f7ef;
+  --color-success-text: #146c2e;
+  --color-warning-bg: #fff4db;
+  --color-warning-text: #935c00;
+  --color-danger-bg: #ffe7e6;
+  --color-danger-text: #a62d28;
+
+  --shadow-surface: 0 16px 40px rgba(31, 35, 40, 0.08);
+  --shadow-focus-ring: 0 0 0 3px rgba(47, 111, 235, 0.16);
+
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-bg-canvas);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-base);
+  background:
+    radial-gradient(circle at top left, rgba(156, 124, 228, 0.2), transparent 34%),
+    radial-gradient(circle at top right, rgba(121, 101, 214, 0.16), transparent 30%),
+    radial-gradient(circle at bottom center, rgba(225, 207, 255, 0.24), transparent 38%),
+    var(--color-bg-canvas);
+  color: var(--color-text-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-strong);
+}
+
+#root {
+  min-height: 100svh;
+}
