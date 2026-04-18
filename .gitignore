@@ -1,0 +1,12 @@
+# Root-level local artifacts to avoid accidental commits.
+/node_modules/
+/node.js
+/package.json
+/package-lock.json
+/src/
+/supabase/
+/summarize_git.py
+
+# Common local files
+.DS_Store
+*.log
